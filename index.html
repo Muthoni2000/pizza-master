@@ -138,8 +138,47 @@
 
       </div>
 
-      <br>
+      <br> <!-- Here is the table where crust type is selected. -->
+      <div id="crusttable">
+        <h3 class="tablehead">Select crust*:</h3>
 
+        <input type="radio" name="crust" value="Plain"> Plain Crust<br>
+        <input type="radio" name="crust" value="Garlic Butter"> Garlic Butter Crust<br>
+        <input type="radio" name="crust" value="Cheese-Stuffed"> Cheese-Stuffed Crust<br>
+        <input type="radio" name="crust" value="Spicy"> Spicy Crust<br>
+        <input type="radio" name="crust" value="House Special"> House Special Crust<br>
+
+      </div>
+      <br>
+      <!-- Here is the table where delivery is selected. -->
+      <div id="deliverytable">
+        <h3 class="tablehead">Select delivery*:</h3>
+        <div id="takeout"><input type="radio" name="delivery" value="TakeOut"> TakeOut<br></div>
+        <div class="delivery">
+          <input type="radio" name="delivery" id="delivery" onclick="alert(this.value);this.onclick='';" value="Delivery fee is shs 200"> Delivery<br>
+          <div class="location">
+            <p class="note text-danger">Please note that <br>delivery fee is 200</p>
+            <label>Location
+                                            <select id="deliveryCity" onclick="alert(this.value);this.onclick='';">
+                                                    <option>Ngong Road</option>
+                                                    <option>Junction Mall</option>
+                                                    <option>Donholm</option>
+                                                    <option>Buruburu</option>
+                                                    <option>Kitengela</option>
+                                                        <option>Embakasi</option>
+                                                    <option>Ojijo Road</option>
+                                                    <option>Parklands </option>
+                                                    <option>Westlands</option>
+                                                    <option>Waiyaki way</option>
+                                                    <option>South B</option>
+                                            </select>
+                                        </label>
+          </div>
+          <br>
+        </div>
+
+      </div>
+      <br>
   </body>
 
 </html>
