@@ -179,6 +179,55 @@
 
       </div>
       <br>
+      <!-- Here is the table where multiple veg may be selected. -->
+      <div id="vegtable">
+        <h3 class="tablehead">Select your choice of veggie(s):</h3>
+
+        <input type="checkbox" name="veg" value="Tomatoes"> Fresh Tomatoes<br>
+        <input type="checkbox" name="veg" value="Onions"> Onions<br>
+        <input type="checkbox" name="veg" value="Olives"> Black Olives<br>
+        <input type="checkbox" name="veg" value="Green Peppers"> Green Peppers<br>
+        <input type="checkbox" name="veg" value="Mushrooms"> Mushrooms<br>
+        <input type="checkbox" name="veg" value="Pineapple"> Pineapple<br>
+        <input type="checkbox" name="veg" value="Spinach"> Spinach<br>
+        <input type="checkbox" name="veg" value="Jalape&ntildeo"> Jalape&ntildeo<br>
+
+      </div>
+      <br>
+      <br>
+      <button class="btn btn-dark" size="4" id="calc" type="submit" onclick="invoice()">Place order</button>
+      <br><br>
+    </div>
+    <div class="container">
+      <div class="pizza card  displayTotal">
+
+        <p id="size"></p>
+        <p id="sizeprice"></p>
+
+        <p id="crust"></p>
+        <p id="crustprice"></p>
+
+        <p id="delivery"></p>
+        <p id="deliveryprice"></p>
+
+        <p id="toppings"></p>
+        <p id="toppingsprice"></p>
+
+        <p id="veg"></p>
+        <p id="vegprice"></p>
+
+        <p><strong>TOTAL PRICE:</strong></p>
+        <p id="totalprice"></p>
+
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <br>
+  <br>
+
   </body>
 
 </html>
