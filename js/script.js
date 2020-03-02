@@ -46,10 +46,18 @@ function myFunction() {
       if (size === "Large") {
         sizePrice = 1400;
       }; console.log("sizePrice="+sizePrice);
-      
+
       // Setting crust and crustPrice based on selection
   var crust = document.querySelector('input[name="crust"]:checked').value; console.log("crust="+crust);
   var crustPrice = 0
   if (crust="Cheese-Stuffed") {
     crustPrice = 300;
   }; console.log("crustPrice="+crustPrice);
+
+// Setting delivery based on selection
+  var delivery = document.querySelector                                   ('input[name="delivery"]:checked').value; console.log("delivery="+delivery);
+   var deliveryprice = 0
+   if (delivery = "Delivery"){
+     deliveryPrice = 200;
+      console.log("deliveryPrice="+deliveryPrice);
+   }
