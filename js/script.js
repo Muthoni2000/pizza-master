@@ -32,3 +32,17 @@ function myFunction() {
       $(".displayTotal").show();
   });
   });
+  function invoice() {
+
+    // Setting size and sizePrice based on selection
+      var size = document.querySelector('input[name="size"]:checked').value; console.log("size="+size);
+      var sizePrice = 0;
+      if (size === "Regular") {
+        sizePrice = 600;
+      };
+      if (size === "Medium") {
+        sizePrice = 1000;
+      };
+      if (size === "Large") {
+        sizePrice = 1400;
+      }; console.log("sizePrice="+sizePrice);
