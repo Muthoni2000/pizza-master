@@ -129,3 +129,14 @@ $("#veg").html(vegDisplay);
 $("#vegprice").html("shs"+vegPrice+".00");
 $("#totalprice").html(" Shs."+totalPrice+".00");
 };
+$(document).ready(function(){
+    $(".delivery").click(function(){
+    $("#takeout").hide();
+      $(".note").show();
+      $(".location").show();
+    });
+    $("#calc").click(function(){
+      $(".displayTotal").show();
+      $(".pizzaSelector").hide();
+    })
+  });
