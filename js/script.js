@@ -61,3 +61,27 @@ function myFunction() {
      deliveryPrice = 200;
       console.log("deliveryPrice="+deliveryPrice);
    }
+   // Setting toppingsSelect array and toppingsPrice based on multiple check boxes selected. Also setting up toppingsDisplay to convert the array into a convenient string.
+  var toppingsPrice = 0
+  var toppings = document.getElementsByName("toppings");
+  var toppingsSelect = [];
+  var toppingsDisplay = "";
+  for (var i = 0; i < toppings.length; i++) {
+    if (toppings[i].checked) {
+      toppingsSelect.push(toppings[i].value);
+    };
+  }; console.log("toppingsSelect="+toppingsSelect);
+  if (toppingsSelect.length === 1) {
+    toppingsDisplay = toppingsSelect[0];
+  } else if (toppingsSelect.length > 1) {
+    for (i=0; i < toppingsSelect.length; i++) {
+        toppingsDisplay += toppingsSelect[i];
+        if (i < (toppingsSelect.length-1)) {
+          toppingsDisplay += ", ";
+        };
+    };
+  };  
+  toppingsPrice = toppingsSelect.length * 200; console.log("toppingsPrice="+toppingsPrice);
+  if (toppingsSelect.length === 0) {
+    toppingsDisplay = "No toppings";
+  }
