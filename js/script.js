@@ -85,3 +85,30 @@ function myFunction() {
   if (toppingsSelect.length === 0) {
     toppingsDisplay = "No toppings";
   }
+  // Setting vegSelect array and vegPrice based on multiple check boxes selected
+  var vegPrice = 0;
+  var veg = document.getElementsByName("veg");
+  var vegSelect = [];
+  var vegDisplay = "";
+  for (var i = 0; i<veg.length; i++) {
+    if (veg[i].checked) {
+      vegSelect.push(veg[i].value);
+    };
+  }; console.log("vegSelect="+vegSelect);
+  if (vegSelect.length > 4) {
+    vegPrice = 2;
+  }; console.log("vegPrice="+vegPrice);
+  if (vegSelect.length === 1) {
+    vegDisplay = vegSelect[0];
+  } else if (vegSelect.length > 1) {
+    for (i=0; i < vegSelect.length; i++) {
+      vegDisplay += vegSelect[i];
+      if (i < (vegSelect.length - 1)) {
+        vegDisplay += ", ";
+      };
+    };
+  };
+  
+  if (vegSelect.length === 0) {
+    vegDisplay = "No Vegetables";
+  }
