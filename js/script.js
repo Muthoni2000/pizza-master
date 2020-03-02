@@ -46,3 +46,10 @@ function myFunction() {
       if (size === "Large") {
         sizePrice = 1400;
       }; console.log("sizePrice="+sizePrice);
+      
+      // Setting crust and crustPrice based on selection
+  var crust = document.querySelector('input[name="crust"]:checked').value; console.log("crust="+crust);
+  var crustPrice = 0
+  if (crust="Cheese-Stuffed") {
+    crustPrice = 300;
+  }; console.log("crustPrice="+crustPrice);
