@@ -112,3 +112,6 @@ function myFunction() {
   if (vegSelect.length === 0) {
     vegDisplay = "No Vegetables";
   }
+
+// Calculating totalPrice
+var totalPrice = (vegPrice + toppingsPrice + crustPrice + deliveryPrice  + sizePrice); console.log("totalPrice="+totalPrice);
