@@ -115,3 +115,17 @@ function myFunction() {
 
 // Calculating totalPrice
 var totalPrice = (vegPrice + toppingsPrice + crustPrice + deliveryPrice  + sizePrice); console.log("totalPrice="+totalPrice);
+
+// Enter values into the invoice table
+$("#size").html(size +" Pizza");
+$("#sizeprice").html("shs"+sizePrice+".00");
+$("#crust").html(crust +" Crust");
+$("#crustprice").html("shs"+crustPrice+".00");
+$("#delivery").html(delivery +" Delivery");
+$("#deliveryprice").html("shs" +deliveryPrice+ ".00");
+$("#toppings").html(toppingsDisplay);
+$("#toppingsprice").html("shs"+toppingsPrice+".00");
+$("#veg").html(vegDisplay);
+$("#vegprice").html("shs"+vegPrice+".00");
+$("#totalprice").html(" Shs."+totalPrice+".00");
+};
