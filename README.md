@@ -22,9 +22,9 @@ Behavior Driven Development.
 Behavior	Input	Output
 on load	scroll and see different pizza images and names	look at the ones you like
 on order online	click on order now or scroll down to order now and order	on checkout you will see what you have ordered and the bill to be paid
-Enter your name if you want to leave a message	['Serah']	name = 'Serah'
+Enter your name if you want to leave a message	['Tsonn']	name = 'Tsonn'
 Enter Email && Message	['Email':'Message']	Email && Message
-Submit	Email && Message	Hi Serah we have received your message and we will get in touch. Thank you for contacting us
+Submit	Email && Message	Hi Tsonn we have received your message and we will get in touch. Thank you for contacting us
 
 Technologies Used:
 HTML-For Building Mark Up pages
@@ -33,7 +33,7 @@ Bootsrap-For making webpage responsive
 JQuery-For animations and cool effects of the website like hiding and showing elements
 Javascript-For DOM(Document Object Manipulation)scripts
 Support and contact details
-contact me https://github.com/Wambuilucy/pizza/issues
+contact me https://muthoni2000.github.io/pizza-issues/
 
 License
 The project is underMIT license Copyright © 2020.All rigths reserved
