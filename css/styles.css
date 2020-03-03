@@ -4,7 +4,11 @@
 body{
   background-color:white;
 }
-
+.navbar{
+  display:inline-block;
+  padding: 40px;
+  color: black;
+}
 .carousel-caption{ 
 font-family: 'Amaranth', sans-serif;
 font-size:24px;
